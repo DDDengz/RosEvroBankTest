@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC4C011B1DBF4DDD00580943 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011A1DBF4DDD00580943 /* ImageRow.swift */; };
+		AC4C011D1DBF555800580943 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011C1DBF555800580943 /* Database.swift */; };
+		AC4C01201DBF56D100580943 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */; };
+		AC4C01211DBF56D100580943 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */; };
+		AC4C01231DBF5F3900580943 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01221DBF5F3900580943 /* ImageViewCell.swift */; };
+		ACD4B3051DBF2E3800060115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3041DBF2E3800060115 /* AppDelegate.swift */; };
+		ACD4B30A1DBF2E3800060115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B3081DBF2E3800060115 /* Main.storyboard */; };
+		ACD4B30C1DBF2E3800060115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B30B1DBF2E3800060115 /* Assets.xcassets */; };
+		ACD4B30F1DBF2E3800060115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B30D1DBF2E3800060115 /* LaunchScreen.storyboard */; };
+		ACD4B3181DBF348A00060115 /* ImageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */; };
+		ACD4B31A1DBF34DB00060115 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */; };
+		ACD4B31E1DBF35A300060115 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B31C1DBF35A300060115 /* Model.xcdatamodeld */; };
+		ACD4B3201DBF3FEC00060115 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC4C011A1DBF4DDD00580943 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		AC4C011C1DBF555800580943 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC4C01221DBF5F3900580943 /* ImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		ACD4B3011DBF2E3800060115 /* RosEvroBankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosEvroBankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD4B3041DBF2E3800060115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACD4B3091DBF2E3800060115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACD4B30B1DBF2E3800060115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACD4B30E1DBF2E3800060115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACD4B3101DBF2E3800060115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageListTableViewController.swift; path = ../ImageListTableViewController.swift; sourceTree = "<group>"; };
+		ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		ACD4B31D1DBF35A300060115 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACD4B2FE1DBF2E3800060115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACD4B2F81DBF2E3800060115 = {
+			isa = PBXGroup;
+			children = (
+				ACD4B3031DBF2E3800060115 /* RosEvroBankTest */,
+				ACD4B3021DBF2E3800060115 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACD4B3021DBF2E3800060115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACD4B3011DBF2E3800060115 /* RosEvroBankTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD4B3031DBF2E3800060115 /* RosEvroBankTest */ = {
+			isa = PBXGroup;
+			children = (
+				ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */,
+				AC4C011A1DBF4DDD00580943 /* ImageRow.swift */,
+				ACD4B31B1DBF358F00060115 /* Model */,
+				ACD4B3161DBF344800060115 /* SupportingFiles */,
+				ACD4B3041DBF2E3800060115 /* AppDelegate.swift */,
+				ACD4B3081DBF2E3800060115 /* Main.storyboard */,
+				AC4C01221DBF5F3900580943 /* ImageViewCell.swift */,
+				ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */,
+				ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */,
+			);
+			path = RosEvroBankTest;
+			sourceTree = "<group>";
+		};
+		ACD4B3161DBF344800060115 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ACD4B3101DBF2E3800060115 /* Info.plist */,
+				ACD4B30D1DBF2E3800060115 /* LaunchScreen.storyboard */,
+				ACD4B30B1DBF2E3800060115 /* Assets.xcassets */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ACD4B31B1DBF358F00060115 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */,
+				AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */,
+				AC4C011C1DBF555800580943 /* Database.swift */,
+				ACD4B31C1DBF35A300060115 /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACD4B3001DBF2E3800060115 /* RosEvroBankTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACD4B3131DBF2E3800060115 /* Build configuration list for PBXNativeTarget "RosEvroBankTest" */;
+			buildPhases = (
+				ACD4B2FD1DBF2E3800060115 /* Sources */,
+				ACD4B2FE1DBF2E3800060115 /* Frameworks */,
+				ACD4B2FF1DBF2E3800060115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RosEvroBankTest;
+			productName = RosEvroBankTest;
+			productReference = ACD4B3011DBF2E3800060115 /* RosEvroBankTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACD4B2F91DBF2E3800060115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Artem Salimyanov";
+				TargetAttributes = {
+					ACD4B3001DBF2E3800060115 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VEB7U25TBJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ACD4B2FC1DBF2E3800060115 /* Build configuration list for PBXProject "RosEvroBankTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACD4B2F81DBF2E3800060115;
+			productRefGroup = ACD4B3021DBF2E3800060115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACD4B3001DBF2E3800060115 /* RosEvroBankTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACD4B2FF1DBF2E3800060115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD4B30F1DBF2E3800060115 /* LaunchScreen.storyboard in Resources */,
+				ACD4B30C1DBF2E3800060115 /* Assets.xcassets in Resources */,
+				ACD4B30A1DBF2E3800060115 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACD4B2FD1DBF2E3800060115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4C01211DBF56D100580943 /* Image+CoreDataProperties.swift in Sources */,
+				ACD4B3051DBF2E3800060115 /* AppDelegate.swift in Sources */,
+				ACD4B3201DBF3FEC00060115 /* HTTPClient.swift in Sources */,
+				AC4C011B1DBF4DDD00580943 /* ImageRow.swift in Sources */,
+				AC4C01201DBF56D100580943 /* Image+CoreDataClass.swift in Sources */,
+				ACD4B3181DBF348A00060115 /* ImageListTableViewController.swift in Sources */,
+				ACD4B31A1DBF34DB00060115 /* CoreDataTableViewController.swift in Sources */,
+				AC4C011D1DBF555800580943 /* Database.swift in Sources */,
+				AC4C01231DBF5F3900580943 /* ImageViewCell.swift in Sources */,
+				ACD4B31E1DBF35A300060115 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACD4B3081DBF2E3800060115 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACD4B3091DBF2E3800060115 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACD4B30D1DBF2E3800060115 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACD4B30E1DBF2E3800060115 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACD4B3111DBF2E3800060115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACD4B3121DBF2E3800060115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACD4B3141DBF2E3800060115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEB7U25TBJ;
+				INFOPLIST_FILE = RosEvroBankTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Salimyanov.RosEvroBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACD4B3151DBF2E3800060115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEB7U25TBJ;
+				INFOPLIST_FILE = RosEvroBankTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Salimyanov.RosEvroBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACD4B2FC1DBF2E3800060115 /* Build configuration list for PBXProject "RosEvroBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD4B3111DBF2E3800060115 /* Debug */,
+				ACD4B3121DBF2E3800060115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACD4B3131DBF2E3800060115 /* Build configuration list for PBXNativeTarget "RosEvroBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD4B3141DBF2E3800060115 /* Debug */,
+				ACD4B3151DBF2E3800060115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACD4B31C1DBF35A300060115 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACD4B31D1DBF35A300060115 /* Model.xcdatamodel */,
+			);
+			currentVersion = ACD4B31D1DBF35A300060115 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACD4B2F91DBF2E3800060115 /* Project object */;
+}
