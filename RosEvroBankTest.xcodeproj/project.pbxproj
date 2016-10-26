@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC4C011B1DBF4DDD00580943 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011A1DBF4DDD00580943 /* ImageRow.swift */; };
 		AC4C011D1DBF555800580943 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011C1DBF555800580943 /* Database.swift */; };
-		AC4C01201DBF56D100580943 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */; };
-		AC4C01211DBF56D100580943 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */; };
-		AC4C01231DBF5F3900580943 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01221DBF5F3900580943 /* ImageViewCell.swift */; };
+		AC4C01231DBF5F3900580943 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01221DBF5F3900580943 /* PhotoViewCell.swift */; };
+		AC4C01261DBFE91D00580943 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01241DBFE91D00580943 /* Photo+CoreDataClass.swift */; };
+		AC4C01271DBFE91D00580943 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01251DBFE91D00580943 /* Photo+CoreDataProperties.swift */; };
+		AC4C01291DBFEE2400580943 /* FetchedPhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C01281DBFEE2400580943 /* FetchedPhotoTableViewController.swift */; };
 		ACD4B3051DBF2E3800060115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3041DBF2E3800060115 /* AppDelegate.swift */; };
 		ACD4B30A1DBF2E3800060115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B3081DBF2E3800060115 /* Main.storyboard */; };
 		ACD4B30C1DBF2E3800060115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B30B1DBF2E3800060115 /* Assets.xcassets */; };
 		ACD4B30F1DBF2E3800060115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD4B30D1DBF2E3800060115 /* LaunchScreen.storyboard */; };
-		ACD4B3181DBF348A00060115 /* ImageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */; };
+		ACD4B3181DBF348A00060115 /* PhotoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3171DBF348A00060115 /* PhotoListTableViewController.swift */; };
 		ACD4B31A1DBF34DB00060115 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */; };
 		ACD4B31E1DBF35A300060115 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B31C1DBF35A300060115 /* Model.xcdatamodeld */; };
 		ACD4B3201DBF3FEC00060115 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC4C011A1DBF4DDD00580943 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
 		AC4C011C1DBF555800580943 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		AC4C01221DBF5F3900580943 /* ImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		AC4C01221DBF5F3900580943 /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		AC4C01241DBFE91D00580943 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AC4C01251DBFE91D00580943 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC4C01281DBFEE2400580943 /* FetchedPhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedPhotoTableViewController.swift; sourceTree = "<group>"; };
 		ACD4B3011DBF2E3800060115 /* RosEvroBankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosEvroBankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD4B3041DBF2E3800060115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD4B3091DBF2E3800060115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACD4B30B1DBF2E3800060115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD4B30E1DBF2E3800060115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD4B3101DBF2E3800060115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageListTableViewController.swift; path = ../ImageListTableViewController.swift; sourceTree = "<group>"; };
+		ACD4B3171DBF348A00060115 /* PhotoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoListTableViewController.swift; path = ../PhotoListTableViewController.swift; sourceTree = "<group>"; };
 		ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		ACD4B31D1DBF35A300060115 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -71,14 +71,14 @@
 			isa = PBXGroup;
 			children = (
 				ACD4B31F1DBF3FEC00060115 /* HTTPClient.swift */,
-				AC4C011A1DBF4DDD00580943 /* ImageRow.swift */,
 				ACD4B31B1DBF358F00060115 /* Model */,
 				ACD4B3161DBF344800060115 /* SupportingFiles */,
 				ACD4B3041DBF2E3800060115 /* AppDelegate.swift */,
 				ACD4B3081DBF2E3800060115 /* Main.storyboard */,
-				AC4C01221DBF5F3900580943 /* ImageViewCell.swift */,
-				ACD4B3171DBF348A00060115 /* ImageListTableViewController.swift */,
+				AC4C01221DBF5F3900580943 /* PhotoViewCell.swift */,
 				ACD4B3191DBF34DB00060115 /* CoreDataTableViewController.swift */,
+				ACD4B3171DBF348A00060115 /* PhotoListTableViewController.swift */,
+				AC4C01281DBFEE2400580943 /* FetchedPhotoTableViewController.swift */,
 			);
 			path = RosEvroBankTest;
 			sourceTree = "<group>";
@@ -96,8 +96,8 @@
 		ACD4B31B1DBF358F00060115 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC4C011E1DBF56D100580943 /* Image+CoreDataClass.swift */,
-				AC4C011F1DBF56D100580943 /* Image+CoreDataProperties.swift */,
+				AC4C01241DBFE91D00580943 /* Photo+CoreDataClass.swift */,
+				AC4C01251DBFE91D00580943 /* Photo+CoreDataProperties.swift */,
 				AC4C011C1DBF555800580943 /* Database.swift */,
 				ACD4B31C1DBF35A300060115 /* Model.xcdatamodeld */,
 			);
@@ -177,15 +177,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4C01211DBF56D100580943 /* Image+CoreDataProperties.swift in Sources */,
+				AC4C01261DBFE91D00580943 /* Photo+CoreDataClass.swift in Sources */,
 				ACD4B3051DBF2E3800060115 /* AppDelegate.swift in Sources */,
 				ACD4B3201DBF3FEC00060115 /* HTTPClient.swift in Sources */,
-				AC4C011B1DBF4DDD00580943 /* ImageRow.swift in Sources */,
-				AC4C01201DBF56D100580943 /* Image+CoreDataClass.swift in Sources */,
-				ACD4B3181DBF348A00060115 /* ImageListTableViewController.swift in Sources */,
+				AC4C01271DBFE91D00580943 /* Photo+CoreDataProperties.swift in Sources */,
+				ACD4B3181DBF348A00060115 /* PhotoListTableViewController.swift in Sources */,
 				ACD4B31A1DBF34DB00060115 /* CoreDataTableViewController.swift in Sources */,
 				AC4C011D1DBF555800580943 /* Database.swift in Sources */,
-				AC4C01231DBF5F3900580943 /* ImageViewCell.swift in Sources */,
+				AC4C01291DBFEE2400580943 /* FetchedPhotoTableViewController.swift in Sources */,
+				AC4C01231DBF5F3900580943 /* PhotoViewCell.swift in Sources */,
 				ACD4B31E1DBF35A300060115 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

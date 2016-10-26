@@ -1,90 +1,88 @@
-//
-//  Database.swift
-//  TuturuTest
-//
-//  Created by Артем on 21/10/2016.
-//  Copyright © 2016 Artem Salimyanov. All rights reserved.
-//
-// Вспомогательные методы для работы с базой
-
-import UIKit
+import Foundation
 import CoreData
 
-class MyDocument: UIManagedDocument {
+class CoreDataStack: NSObject {
+    static let moduleName = "Model"
     
-    override class var persistentStoreName : String{
-        return "ImageList.sqlite"
-    }
-    
-    override func contents(forType typeName: String) throws -> Any {
-        print ("Auto-Saving Document")
-        return try! super.contents(forType: typeName)
-    }
-    
-    override func handleError(_ error: Error, userInteractionPermitted: Bool) {
-        print("Ошибка при записи:\(error.localizedDescription)")
-        if let userInfo = error._userInfo as? [String:AnyObject],
-            let conflicts = userInfo["conflictList"] as? NSArray{
-            print("Конфликты при записи:\(conflicts)")
-            
+    func saveMainContext() {
+        guard mainMoc.hasChanges || privateMoc.hasChanges else {
+            return
         }
+        
+        mainMoc.performAndWait() {
+            do {
+                //let startTime = CFAbsoluteTimeGetCurrent()
+                try self.mainMoc.save()
+                //let endTime = CFAbsoluteTimeGetCurrent()
+                //let elapsedTime = (endTime - startTime) * 1000
+                //print("Pushing main context took \(elapsedTime) ms")
+                
+            } catch {
+                fatalError("Ошибка сохранения mainMoc! \(error)")
+            }
+        }
+        
+        privateMoc.perform() {
+            do {
+                //let startTime1 = CFAbsoluteTimeGetCurrent()
+                try self.privateMoc.save()
+                //let endTime1 = CFAbsoluteTimeGetCurrent()
+                //let elapsedTime1 = (endTime1 - startTime1) * 1000
+                //print("Saving private context took \(elapsedTime1) ms")
+            } catch {
+                fatalError("Ошибка сохранения privateMoc! \(error)")
+            }
+        }
+        
     }
-}
-
-extension NSManagedObjectContext
-{
-    public func saveThrows () {
+    
+    lazy var model: NSManagedObjectModel = {
+        let modelURL = Bundle.main.url(forResource: moduleName, withExtension: "momd")!
+        return NSManagedObjectModel(contentsOf: modelURL)!
+    }()
+    
+    lazy var directory: URL = {
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last!
+    }()
+    
+    lazy var coordinator: NSPersistentStoreCoordinator = {
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.model)
+        
+        let persistentStoreURL = self.directory.appendingPathComponent("\(moduleName).sqlite")
+        print (persistentStoreURL)
         do {
-            try save()
-        } catch let error  {
-            print("Core Data Error: \(error)")
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType,
+                                               configurationName: nil,
+                                               at: persistentStoreURL,
+                                               options: [NSMigratePersistentStoresAutomaticallyOption: true,
+                                                         NSInferMappingModelAutomaticallyOption: false])
+        } catch {
+            fatalError("Persistent store error! \(error)")
         }
-    }
-}
-
-extension UIManagedDocument {
+        
+        return coordinator
+    }()
     
-    class func useDocument (_ completion: @escaping ( _ document: MyDocument) -> Void) {
-        let fileManager = FileManager.default
-        let doc = "database"
-        let urls = FileManager.default.urls(for: .documentDirectory,
-                                            in: .userDomainMask)
+    // создание writer MOC
+    fileprivate lazy var privateMoc: NSManagedObjectContext = {
+        let moc = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         
-        let url = urls[urls.count - 1].appendingPathComponent(doc)
-        // print (url)
-        let document = MyDocument(fileURL: url)
-        document.persistentStoreOptions =
-            [ NSMigratePersistentStoresAutomaticallyOption: true,
-              NSInferMappingModelAutomaticallyOption: true]
+        moc.persistentStoreCoordinator = self.coordinator
         
-        document.managedObjectContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        moc.mergePolicy =  NSMergeByPropertyObjectTrumpMergePolicy
         
-        if let parentContext = document.managedObjectContext.parent{
-            parentContext.perform {
-                parentContext.mergePolicy =  NSMergeByPropertyObjectTrumpMergePolicy
-            }
-        }
+        return moc
+    }()
+    
+    // создание main thread MOC
+    lazy var mainMoc: NSManagedObjectContext = {
+        let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         
-        if !fileManager.fileExists(atPath: url.path) {
-            document.save(to: url, for: .forCreating) { (success) -> Void in
-                if success {
-                    print("File создан: Success")
-                    completion (document)
-                }
-            }
-        }else  {
-            if document.documentState == .closed {
-                document.open(){(success:Bool) -> Void in
-                    if success {
-                        print("File существует: Открыт")
-                        completion (document)                    
-                    }
-                }
-            } else {
-                completion ( document)
-            }
-        }
+        moc.parent = self.privateMoc
         
-    }
+        moc.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
+        return moc
+    }()
     
 }

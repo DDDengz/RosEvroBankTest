@@ -7,20 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image List Table View Controller-->
+        <!--Fetched Photo Table View Controller-->
         <scene sceneID="cNv-mo-UXa">
             <objects>
-                <tableViewController id="rQC-zd-Nam" customClass="ImageListTableViewController" customModule="RosEvroBankTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="rQC-zd-Nam" customClass="FetchedPhotoTableViewController" customModule="RosEvroBankTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGr-R6-R1Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="95" id="UWC-8H-U5p" customClass="ImageViewCell" customModule="RosEvroBankTest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="95" id="UWC-8H-U5p" customClass="PhotoViewCell" customModule="RosEvroBankTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWC-8H-U5p" id="gZh-VX-2IP">
-                                    <frame key="frameInset" width="375" height="94"/>
+                                    <frame key="frameInset" width="375" height="94.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uG3-xU-Mja">
@@ -47,8 +47,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageImageView" destination="wdD-lZ-CPk" id="ish-gI-2V1"/>
-                                    <outlet property="imageTitle" destination="XH1-Sl-VBW" id="GP3-1v-78c"/>
+                                    <outlet property="photoTitle" destination="XH1-Sl-VBW" id="cOv-iS-Vgr"/>
+                                    <outlet property="photoView" destination="wdD-lZ-CPk" id="50X-CP-4Jc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,12 +61,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuV-W6-xgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="46.326836581709152"/>
+            <point key="canvasLocation" x="1735.2" y="46.326836581709152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--CoreDataLoad-->
         <scene sceneID="vh2-uc-PX6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rfg-Na-18k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CoreDataLoad" id="Pya-6D-3wT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9TF-er-b8G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -79,7 +80,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktY-nN-FAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143.19999999999999" y="46.326836581709152"/>
+            <point key="canvasLocation" x="796" y="46.326836581709152"/>
         </scene>
     </scenes>
 </document>
